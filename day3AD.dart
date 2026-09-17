@@ -3,6 +3,9 @@ void main(){
     q2();
     q3();
     q4();
+    q5();
+    q6();
+
 }
 
 class Student{
@@ -61,6 +64,33 @@ q4(){
     Fullname fullname =Fullname();
     print("first name:${fullname.firstname} ");
     print( "last name : ${fullname.lastname}");
+}
+
+class Star{
+    String name="";
+    int age=0;
+
+    Star(){
+        print("student created object");
+
+    }
+}
+q5(){
+  Star star=Star();
+  
+}
+class Moon{
+    String name="";
+    String text="";
+
+    Moon (){
+        print("ooii shamnooiihh");
+    } 
+
+
+}
+q6(){
+ Moon moon =Moon();
 }
 
 
