@@ -1,31 +1,34 @@
 void main(){
-    q1();
+    // q1();
     q2();
     q3();
     q4();
     q5();
     q6();
+    q7();
+    q8();
+
 
 }
 
-class Student{
-    String name ="shamna";
-    int age = 18;
+// class Student{
+//     String name ="shaaa";
+//     int age = 18;
 
-  void study(){
-    print("$name is studying in CA");
-  }
+//   void study(){
+//     print("$name is studying in CA");
+//   }
 
-}
+// }
 
-q1(){
- Student student = Student();
-  student.age =17;
- print(student.name); 
- print(student.age);
- student.study();
+// q1(){
+//  Student student = Student();
+//   student.age =17;
+//  print(student.name); 
+//  print(student.age);
+//  student.study();
 
-}
+// }
 
 class Name {
     String name="jihan";
@@ -45,7 +48,7 @@ q2(){
   
 }
 class Thing{
-    String name="shamna";
+    String name="shaaa";
     int age=17;
 
 }
@@ -84,7 +87,7 @@ class Moon{
     String text="";
 
     Moon (){
-        print("ooii shamnooiihh");
+        print("ooii heloooo");
     } 
 
 
@@ -92,6 +95,38 @@ class Moon{
 q6(){
  Moon moon =Moon();
 }
+
+
+class Person{
+  String name ="jihan";
+  String skill="dart";
+}
+ q7(){
+  Person person =Person();
+  print(person.name);
+  print(person.skill);
+
+ }
+
+class A{
+    String name;
+    int mark;
+
+    A(this.name,this.mark);
+
+}
+
+ q8(){
+    A a1 = A("jihan",79);
+    A a2 = A("shaaa",89);
+    print(a2.name);
+    print(a1.mark);
+
+
+ }
+
+
+
 
 
 
