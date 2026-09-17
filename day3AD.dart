@@ -1,7 +1,8 @@
 void main(){
     q1();
     q2();
-    // q3();
+    q3();
+    q4();
 }
 
 class Student{
@@ -39,6 +40,27 @@ q2(){
     print(name.age);
     name.fullinfo();
   
+}
+class Thing{
+    String name="shamna";
+    int age=17;
+
+}
+q3(){
+  Thing thing =Thing();
+  print(thing.name);
+  print(thing.age); 
+}
+
+class Fullname{
+  String firstname ="muhammed";
+  String lastname ="jihan";
+
+}
+q4(){
+    Fullname fullname =Fullname();
+    print("first name:${fullname.firstname} ");
+    print( "last name : ${fullname.lastname}");
 }
 
 
