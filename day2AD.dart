@@ -77,7 +77,17 @@ q5(){
    ];
    print(studentinfo);
 
+List<String>? nameinfo=null;
+
+List<String>info=[
+    "jihan",
+    ...?nameinfo
+];
+print(info);
+
+
 }
+
 
 
 
