@@ -2,6 +2,8 @@ void main(){
     q1();
     q2();
     q3();
+    q4();
+    q5();
 
 }
 q1(){
@@ -51,9 +53,31 @@ print(allnames?[2]);
 
 }
 
+q4(){
+
+Map<String,String>? student={
+    "name":"shaa",
+    "place":"ambalavalavu",
+    "course":"CA"
+};
+print(student?["place"]);
+
+Map<String,String>? personinfo=null;
+print(personinfo? ["name"]);
 
 
+}
 
+q5(){
+   List<String>? texts=["jihan","ashmil"];
+
+   List<String> studentinfo=[
+    "risuoo",
+    ...?texts
+   ];
+   print(studentinfo);
+
+}
 
 
 
