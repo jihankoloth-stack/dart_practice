@@ -7,6 +7,9 @@ void main(){
     q6();
     q7();
     q8();
+    q9();
+    q10();
+    q11();
 
 
 }
@@ -125,7 +128,78 @@ class A{
 
  }
 
+class Apple{
+    String name="";
+    int age=0;
 
+    Apple.guest(){
+        name="batman";
+        age=60;
+
+    }
+    
+}
+ q9(){
+  Apple apple=Apple.guest();
+  print(apple.name);
+  print(apple.age);
+ }
+
+
+
+class Greet{
+    String name="";
+    int mark=0;
+
+    Greet.firstname(){
+        name="shmana";
+        mark=75;
+
+    }
+    Greet.lastname(){
+        name="jihan";
+        mark=76;
+
+    }
+
+
+}
+
+q10(){
+  Greet greet1 =Greet.firstname();
+  Greet greet2 =Greet.lastname();
+
+  print(greet1.name);
+  print(greet2.name);
+
+
+}
+
+class Happy{
+    String name="";
+    int number=0;
+
+    Happy.good(){
+        name="jihan is happy";
+        number=100;
+
+    }
+    Happy.nice(){
+        name="shamna is happy";
+        number=100;
+
+    }
+
+}
+
+q11() {
+    Happy happy1=Happy.good();
+    Happy happy2=Happy.nice();
+
+    print(happy1.name);
+    print(happy2.name);
+
+}
 
 
 
