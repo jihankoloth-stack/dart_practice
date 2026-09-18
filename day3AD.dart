@@ -10,6 +10,9 @@ void main(){
     q9();
     q10();
     q11();
+    q12();
+    q13();
+
 
 
 }
@@ -200,6 +203,43 @@ q11() {
     print(happy2.name);
 
 }
+
+class Animal{
+    String name ="";
+    int howmany=0;
+
+    Animal.tiger(){
+        name="TIGER";
+        howmany=5;
+    }
+    Animal.lion(){
+        name="LION";
+        howmany=10;
+
+    }
+}
+q12(){
+    Animal animal1=Animal.tiger();
+    Animal animal2=Animal.lion();
+
+    print(animal1.name);
+    print(animal2.name);
+    print("TIGER :${animal1.howmany}");
+    print("LION : ${animal2.howmany}");
+
+}
+class Laptop{
+    final String name;
+    final int model;
+
+    const Laptop(this.name,this.model);
+}
+q13(){
+  const laptop =Laptop("DELL",911);
+  print(laptop.name);
+  print(laptop.model);
+}
+
 
 
 
