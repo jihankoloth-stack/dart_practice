@@ -12,6 +12,15 @@ void main(){
     q11();
     q12();
     q13();
+    q14();
+    q15();
+    q16();
+    q17();
+    q18();
+    q19();
+    q20();
+
+
 
 
 
@@ -239,6 +248,118 @@ q13(){
   print(laptop.name);
   print(laptop.model);
 }
+
+class Color{
+    String _name="green";
+
+    String get name{
+        return _name;
+
+    }
+
+}
+
+
+q14(){
+Color color =Color();
+print(color.name);
+
+}
+
+class Jack {
+    String _name="jihan";
+    
+    set name (String newname){
+        _name =newname;
+
+    }
+}
+
+q15(){
+    Jack jack = Jack();
+    print(jack._name);
+    jack.name="shaa";
+    print(jack._name);
+
+}
+class Hulk{
+    String _name="THOR";
+
+    set name (String newname){
+        _name=newname;
+
+    }
+}
+q16(){
+  Hulk hulk =Hulk();
+  print(hulk._name);
+  hulk.name="iron man";
+  print(hulk._name);
+}
+
+class City{
+  String _name="malappuram";
+
+  String get name{
+    return _name;
+  }
+}
+q17(){
+ City city=City();
+ print(city.name);
+}
+
+class Car{
+ String _name ="I20";
+
+set name (String newname){
+    _name=newname;
+}
+
+ 
+}
+q18(){
+    Car car =Car();
+    print(car._name);
+    car._name="BMW";
+    print(car._name);
+}
+class Bike{
+    String _name="splander";
+
+    String get name =>_name;
+}
+q19(){
+ Bike bike=Bike();
+ print(bike._name);
+  
+}
+
+class Footballer{
+ String _name ="OZIL";
+
+//  getter
+String get name => _name;
+
+
+//  setter
+
+set name(String newname){
+    _name = newname;
+
+}
+}
+q20(){
+  Footballer footballer=Footballer();
+  
+  print(footballer.name);
+
+  footballer.name="RONALDO";
+
+  print(footballer.name);
+}
+
+
 
 
 
