@@ -19,6 +19,9 @@ void main(){
     q18();
     q19();
     q20();
+    q21();
+    q22();
+    q23();
 
 
 
@@ -352,14 +355,62 @@ set name(String newname){
 q20(){
   Footballer footballer=Footballer();
   
-  print(footballer.name);
+  print(footballer._name);
 
   footballer.name="RONALDO";
 
-  print(footballer.name);
+  print(footballer._name);
+  
 }
 
+class Book{
+    int _count=0;
 
+    int get count{
+        return _count;
+
+    }
+    set count(int newcount){
+        if (newcount >=0){
+            _count=newcount;
+        }
+    }
+}
+q21(){
+ Book book =Book();
+ book.count=17;
+ print(book.count);
+ book.count=-5;
+ print(book.count);
+ book.count=77;
+ print(book.count);
+}
+
+class Bankaccount{
+    double _balance=1000;
+
+    double get balance{
+        return _balance;
+    }
+}
+q22(){
+Bankaccount bankaccount=Bankaccount();
+print(bankaccount.balance);
+}
+
+class Rectangle{
+    double width=10;
+    double height=5;
+
+    double get area{
+        return width * height;
+
+    }
+}
+q23(){
+    Rectangle rectangle=Rectangle();
+    print(rectangle.area);
+}
 
 
 
