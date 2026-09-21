@@ -3,6 +3,12 @@ void main(){
     q2();
     q3();
     q4();
+    q5();
+    q6();
+    q7();
+    q8();
+    q9();
+    
 
 
 
@@ -11,18 +17,18 @@ void main(){
 class Student{
     String _name="jihan";
 
-    String get name =>_name;
+    // String get name =>_name;
 
-    set name (String newname){
-        _name=newname;
+    // set name (String newname){
+        // _name=newname;
 
     }
-}
+// }
 q1(){
     Student student=Student();
-    print(student.name);
-    student.name="jinu";
-    print(student.name);
+    print(student._name);
+    // student.name="jinu";
+    // print(student._name);
     
 }
 
@@ -111,12 +117,99 @@ q4(){
 }
 
 
+abstract class Phone{
+    void models();
+}
+
+class Iqoo extends Phone{
+    void models(){
+        print("super quality");
+        
+    }
+}
 
 
+q5(){
+ 
+ Iqoo iqoo=Iqoo();
+ iqoo.models();
 
+}
 
+class Shoes{
+    String name ="nike";
 
+    void nike(){
+        print("nike color is white");
 
+    }
 
+}
 
+class Pants extends Shoes{
+    void zara(){
+        print("zara pant color is black");
 
+    }
+}
+q6(){
+    Pants pants =Pants();
+
+    print(pants.name);
+    pants.nike();
+    pants.zara();
+
+}
+
+class Jihan{
+   String name;
+
+   Jihan(this.name);
+
+}
+class Jinu extends Jihan{
+    Jinu(String name ):super(name);
+
+}
+q7(){
+    Jinu jinu =Jinu("shaaa");
+
+    print(jinu.name);
+
+}
+
+class Shaaa{
+    String name;
+
+    Shaaa(this.name);
+
+}
+class Shamna extends Shaaa{
+    Shamna(String name):super(name) ;
+
+}
+q8(){
+    Shamna shamna =Shamna("jihan");
+     
+     print(shamna.name);
+}
+
+class Red{
+    void color(){
+        print("red is a colour");
+
+    }
+}
+class Green extends Red{
+    void color(){
+        super.color();
+        print("green is a colour");
+
+    }
+}
+
+q9(){
+    Green green =Green();
+
+    green.color();
+}
