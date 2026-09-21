@@ -17,18 +17,18 @@ void main(){
 class Student{
     String _name="jihan";
 
-    // String get name =>_name;
+    String get name =>_name;
 
-    // set name (String newname){
-        // _name=newname;
+    set name (String newname){
+        _name=newname;
 
     }
-// }
+}
 q1(){
     Student student=Student();
     print(student._name);
-    // student.name="jinu";
-    // print(student._name);
+    student.name="jinu";
+    print(student._name);
     
 }
 
@@ -205,6 +205,8 @@ class Green extends Red{
         super.color();
         print("green is a colour");
 
+
+
     }
 }
 
@@ -213,3 +215,9 @@ q9(){
 
     green.color();
 }
+
+
+
+
+
+
