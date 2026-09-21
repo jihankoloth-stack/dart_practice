@@ -8,6 +8,10 @@ void main(){
     q7();
     q8();
     q9();
+    q10();
+    q11();
+    q12();
+
     
 
 
@@ -218,6 +222,52 @@ q9(){
 
 
 
+class Bike{
+  String names;
+
+  Bike(this.names);
+}
+
+ class Splander extends Bike{
+    Splander (String names):super(names);
+
+ }
+
+q10(){
+
+    Splander splander=Splander("hero honda");
+
+    print(splander.names);
+}
+class Book {
+    void bookname(){
+        print("solo levaling");
+
+
+    }
+}
+class Manga extends Book{
+    void animi(){
+        super.bookname();
+        print("attack on titans");
+    }
+}
+q11(){
+    Manga manga=Manga();
+
+    manga.animi();
+}
+
+
+class Maths{
+    static int add(int a,int b)=> a+b;  
+}
+
+
+q12(){
+ print(Maths.add(20,58));
+    
+}
 
 
 
