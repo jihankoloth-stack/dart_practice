@@ -11,6 +11,7 @@ void main(){
     q10();
     q11();
     q12();
+    q13();
 
     
 
@@ -269,5 +270,21 @@ q12(){
     
 }
 
+mixin Swimming {
+    void swim(){
+        print("swimming");
 
+    }
+}
 
+class Human with Swimming{
+    void walk(){
+        print("walking");
+
+    }
+}
+q13(){
+    Human human=Human();
+    human.walk();
+    human.swim();
+}
